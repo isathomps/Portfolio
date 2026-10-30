@@ -85,6 +85,8 @@
   .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;}
   .hero-actions .cta{border-radius:999px;background:#0A2540;color:#fff;transition:background .2s ease;}
   .hero-actions .cta:hover{background:#163A63;}
+  .hero-actions .cta.cta--outline{background:#1F4E82;}
+  .hero-actions .cta.cta--outline:hover{background:#2A619E;}
   /* Map grid — faded, gapless, square tiles */
   /* Map carousel: one map at a time, auto-advances, click opens the full map */
   .map-carousel{position:relative;width:100%;}
@@ -179,7 +181,7 @@
   .contact{background:var(--gray-900);color:var(--white);text-align:center;}
   .contact h2{color:var(--white);margin-bottom:24px;text-align:center;}
   .contact p{color:var(--gray-200);margin-bottom:24px;font-family:'Inter',sans-serif;}
-  .contact-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;font-weight:600;font-family:'Inter',sans-serif;}
+  .contact-links{display:flex;justify-content:center;gap:12px 36px;flex-wrap:wrap;font-weight:600;font-family:'Inter',sans-serif;font-size:clamp(1.125rem,1.6vw,1.375rem);}
   .contact-links a{color:var(--white);text-decoration:none;border-bottom:1px solid var(--bright);padding-bottom:2px;}
   .contact-content{text-align:center;}
 
@@ -239,6 +241,7 @@
       <p class="lead">I'm an urban geographer specializing in public service planning.</p>
       <div class="hero-actions">
         <a class="cta" href="#contact">Get in touch</a>
+        <a class="cta cta--outline" href="portfolioresume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </div>
     <div class="map-carousel" id="mapCarousel" aria-label="Map portfolio">
